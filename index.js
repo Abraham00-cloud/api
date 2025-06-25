@@ -10,9 +10,9 @@ const allStudents = [
     {name: 'benjamin', class:'300lvl', school:'LAUTECH'}
 
 ]
-app.get(home, (req, res) => {
-    res.send('welcome to Node')
-})
+// app.get(home, (req, res) => {
+//     res.send('welcome to Node')
+// })
 
 app.get('/dashboard', (req, res) => {
     res.send('welcome to the fucking dashboard')
@@ -21,7 +21,7 @@ app.get(htmlPage, (req, res) => {
     console.log('is it working')
     res.sendFile(`${__dirname}/index.html`)
 })
-app.get('/api', (req, res) => {
+app.get(home, (req, res) => {
     try{
         res.status(201).json({message: allStudents})
     }
