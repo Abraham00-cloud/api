@@ -1,12 +1,13 @@
 const express = require('express')
 const app = express()
 const home = '/'
-const port = 5550
+const port = 4000
 const htmlPage = '/html'
 
 const allStudents = [
     {name: 'solomon', class:'100lvl', school:'sqi'},
-    {name: 'Emmanuel', class:'200lvl', school:'school'}
+    {name: 'Emmanuel', class:'200lvl', school:'school'},
+    {name: 'benjamin', class:'300lvl', school:'LAUTECH'}
 
 ]
 app.get(home, (req, res) => {
