@@ -10,9 +10,9 @@ const allStudents = [
     {name: 'benjamin', class:'300lvl', school:'LAUTECH'}
 
 ]
-// app.get(home, (req, res) => {
-//     res.send('welcome to Node')
-// })
+app.get('/intro', (req, res) => {
+    res.send('welcome to Node')
+})
 
 app.get('/dashboard', (req, res) => {
     res.send('welcome to the fucking dashboard')
